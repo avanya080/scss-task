@@ -1,0 +1,729 @@
+/* lines and circle */
+/* circle*/
+/* lines between main-container*/
+/* */
+/* this will create handle in the left side of the card */
+/* this will create handle in the left side of the card */
+/* this will create handle in the left side of the card */
+/* this will create handle in the left side of the card */
+/* this will create handle in the left side of the card */
+/* this will create handle in the left side of the card */
+/* this will create handle in the left side of the card */
+/* this will create handle in the left side of the card */
+/* this will create handle in the left side of the card */
+/* this will create handle in the left side of the card */
+/* this will create handle in the left side of the card */
+/* this will create handle in the left side of the card */
+/* this will create handle in the left side of the card */
+body {
+  background-color: #f0f0f0;
+  font-family: "Rubik", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.main {
+  margin: 120px 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-container {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 20px 8px;
+  margin: 0 40px 60px 0;
+  height: 180px;
+  width: 180px;
+  position: relative;
+}
+.main-container-j {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 20px 8px;
+  height: 180px;
+  width: 180px;
+  margin-right: 40px;
+  flex-grow: 1;
+  position: relative;
+}
+.block1 {
+  color: #ffffff;
+  background: #f17d7d;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-size: 20px;
+  &::before {
+    content: "";
+    border: 1px solid grey;
+    top: 90px;
+    right: -40px;
+    width: 40px;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    position: absolute;
+  }
+  &::after {
+    content: "";
+    width: 20px;
+    height: 120px;
+    position: absolute;
+    top: -30px;
+    left: -20px;
+  }
+}
+.block2 {
+  background: rgba(255, 230, 0, 0.97);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  height: 40px;
+  align-items: center;
+  display: flex;
+  font-size: 10px;
+}
+.block3 {
+  background: #46eec6;
+  border-radius: 8px;
+  padding: 10px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  text-align: center;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    right: -40px;
+  }
+}
+.ten {
+  &::after {
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    top: 80px;
+    background: linear-gradient(
+      180deg,
+      rgba(248, 178, 62, 0.984844) 0%,
+      rgba(255, 230, 0, 0.97) 100%
+    );
+    position: absolute;
+    right: -60px;
+  }
+}
+@media only screen and (max-width: 519px) {
+  .one {
+    .block1 {
+      &::before {
+        border: 1px solid grey;
+        height: 120px;
+        border-left: none;
+        border-bottom: none;
+      }
+    }
+    .block3 {
+      &::before {
+        content: "";
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 240px;
+      }
+    }
+  }
+  .two {
+    .block1 {
+      &::before {
+        border: 1px solid grey;
+        height: 120px;
+        border-left: none;
+        border-bottom: none;
+      }
+      &::after {
+        border: 1px solid grey;
+        border-right: none;
+        border-top: none;
+      }
+    }
+    .block3 {
+      &::before {
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 240px;
+      }
+    }
+  }
+  .three {
+    .block1 {
+      &::before {
+        border: 1px solid grey;
+        height: 120px;
+        border-left: none;
+        border-bottom: none;
+      }
+      &::after {
+        border: 1px solid grey;
+        border-right: none;
+        border-top: none;
+      }
+    }
+    .block3 {
+      &::before {
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 240px;
+      }
+    }
+  }
+  .four {
+    .block1 {
+      &::before {
+        border: 1px solid grey;
+        height: 120px;
+        border-left: none;
+        border-bottom: none;
+      }
+      &::after {
+        border: 1px solid grey;
+        border-right: none;
+        border-top: none;
+      }
+    }
+    .block3 {
+      &::before {
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 240px;
+      }
+    }
+  }
+  .five {
+    .block1 {
+      &::before {
+        border: 1px solid grey;
+        height: 120px;
+        border-left: none;
+        border-bottom: none;
+      }
+      &::after {
+        border: 1px solid grey;
+        border-right: none;
+        border-top: none;
+      }
+    }
+    .block3 {
+      &::before {
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 240px;
+      }
+    }
+  }
+  .six {
+    .block1 {
+      &::before {
+        border: 1px solid grey;
+        height: 120px;
+        border-left: none;
+        border-bottom: none;
+      }
+      &::after {
+        border: 1px solid grey;
+        border-right: none;
+        border-top: none;
+      }
+    }
+    .block3 {
+      &::before {
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 240px;
+      }
+    }
+  }
+  .seven {
+    .block1 {
+      &::before {
+        border: 1px solid grey;
+        height: 120px;
+        border-left: none;
+        border-bottom: none;
+      }
+      &::after {
+        border: 1px solid grey;
+        border-right: none;
+        border-top: none;
+      }
+    }
+    .block3 {
+      &::before {
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 240px;
+      }
+    }
+  }
+  .eight {
+    .block1 {
+      &::before {
+        border: 1px solid grey;
+        height: 120px;
+        border-left: none;
+        border-bottom: none;
+      }
+      &::after {
+        border: 1px solid grey;
+        border-right: none;
+        border-top: none;
+      }
+    }
+    .block3 {
+      &::before {
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 240px;
+      }
+    }
+  }
+  .nine {
+    .block1 {
+      &::before {
+        border: 1px solid grey;
+        height: 120px;
+        border-left: none;
+        border-bottom: none;
+      }
+      &::after {
+        border: 1px solid grey;
+        border-right: none;
+        border-top: none;
+      }
+    }
+    .block3 {
+      &::before {
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 240px;
+      }
+    }
+  }
+  .ten {
+    .block1 {
+      &::after {
+        border: 1px solid grey;
+        border-right: none;
+        border-top: none;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 520px) and (max-width: 739px) {
+  .two {
+    .block1 {
+      &::before {
+        border: 1px solid grey;
+        height: 120px;
+        border-left: none;
+        border-bottom: none;
+      }
+    }
+    .block3 {
+      &::before {
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 460px;
+      }
+    }
+  }
+  .four {
+    .block1 {
+      &::before {
+        border: 1px solid grey;
+        height: 120px;
+        border-left: none;
+        border-bottom: none;
+      }
+    }
+    .block3 {
+      &::before {
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 460px;
+      }
+    }
+  }
+  .six {
+    .block1 {
+      &::before {
+        border: 1px solid grey;
+        height: 120px;
+        border-left: none;
+        border-bottom: none;
+      }
+    }
+    .block3 {
+      &::before {
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 460px;
+      }
+    }
+  }
+  .eight {
+    .block1 {
+      &::before {
+        border: 1px solid grey;
+        height: 120px;
+        border-left: none;
+        border-bottom: none;
+      }
+    }
+    .block3 {
+      &::before {
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 460px;
+      }
+    }
+  }
+  .three {
+    .block1 {
+      &::after {
+        border: 1px solid grey;
+        border-right: none;
+        border-top: none;
+      }
+    }
+  }
+  .five {
+    .block1 {
+      &::after {
+        border: 1px solid grey;
+        border-right: none;
+        border-top: none;
+      }
+    }
+  }
+  .seven {
+    .block1 {
+      &::after {
+        border: 1px solid grey;
+        border-right: none;
+        border-top: none;
+      }
+    }
+  }
+  .nine {
+    .block1 {
+      &::after {
+        border: 1px solid grey;
+        border-right: none;
+        border-top: none;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 755px) and (max-width: 959px) {
+  .three {
+    .block1 {
+      &::before {
+        border: 1px solid grey;
+        height: 120px;
+        border-left: none;
+        border-bottom: none;
+      }
+    }
+    .block3 {
+      &::before {
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 680px;
+      }
+    }
+  }
+  .six {
+    .block1 {
+      &::before {
+        border: 1px solid grey;
+        height: 120px;
+        border-left: none;
+        border-bottom: none;
+      }
+    }
+    .block3 {
+      &::before {
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 680px;
+      }
+    }
+  }
+  .nine {
+    .block1 {
+      &::before {
+        border: 1px solid grey;
+        height: 120px;
+        border-left: none;
+        border-bottom: none;
+      }
+    }
+    .block3 {
+      &::before {
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 680px;
+      }
+    }
+  }
+  .four {
+    .block1 {
+      &::after {
+        border: 1px solid grey;
+        border-right: none;
+        border-top: none;
+      }
+    }
+  }
+  .seven {
+    .block1 {
+      &::after {
+        border: 1px solid grey;
+        border-right: none;
+        border-top: none;
+      }
+    }
+  }
+  .ten {
+    .block1 {
+      &::after {
+        border: 1px solid grey;
+        border-right: none;
+        border-top: none;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1179px) {
+  .four {
+    .block1 {
+      &::before {
+        border: 1px solid grey;
+        height: 120px;
+        border-left: none;
+        border-bottom: none;
+      }
+    }
+    .block3 {
+      &::before {
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 900px;
+      }
+    }
+  }
+  .eight {
+    .block1 {
+      &::before {
+        border: 1px solid grey;
+        height: 120px;
+        border-left: none;
+        border-bottom: none;
+      }
+    }
+    .block3 {
+      &::before {
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 900px;
+      }
+    }
+  }
+  .five {
+    .block1 {
+      &::after {
+        border: 1px solid grey;
+        border-right: none;
+        border-top: none;
+      }
+    }
+  }
+  .nine {
+    .block1 {
+      &::after {
+        border: 1px solid grey;
+        border-top: none;
+        border-right: none;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1180px) and (max-width: 1399px) {
+  .five {
+    .block1 {
+      &::before {
+        border: 1px solid grey;
+        height: 120px;
+        border-left: none;
+        border-bottom: none;
+      }
+    }
+    .block3 {
+      &::before {
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 1120px;
+      }
+    }
+  }
+  .six {
+    .block1 {
+      &::after {
+        border: 1px solid grey;
+        border-right: none;
+        border-top: none;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1619px) {
+  .six {
+    .block1 {
+      &::before {
+        border: 1px solid grey;
+        height: 120px;
+        border-left: none;
+        border-bottom: none;
+      }
+    }
+    .block3 {
+      &::before {
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 1340px;
+      }
+    }
+  }
+  .seven {
+    .block1 {
+      &::after {
+        border: 1px solid grey;
+        border-right: none;
+        border-top: none;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1620px) and (max-width: 1839px) {
+  .seven {
+    .block1 {
+      &::before {
+        border: 1px solid grey;
+        height: 120px;
+        border-left: none;
+        border-bottom: none;
+      }
+    }
+    .block3 {
+      &::before {
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 1560px;
+      }
+    }
+  }
+  .eight {
+    .block1 {
+      &::after {
+        border: 1px solid grey;
+        border-right: none;
+        border-top: none;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1840px) and (max-width: 2058px) {
+  .eight {
+    .block1 {
+      &::before {
+        border: 1px solid grey;
+        height: 120px;
+        border-left: none;
+        border-bottom: none;
+      }
+    }
+    .block3 {
+      &::before {
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 1780px;
+      }
+    }
+  }
+  .nine {
+    .block1 {
+      &::after {
+        border: 1px solid grey;
+        border-right: none;
+        border-top: none;
+      }
+    }
+  }
+}
